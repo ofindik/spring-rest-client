@@ -1,5 +1,6 @@
 package dev.osmanfindik.rest.client.demo.post;
 
+import dev.osmanfindik.rest.client.demo.client.JsonPlaceholderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,9 +10,9 @@ import java.util.List;
 @RequestMapping("/api/posts")
 public class PostController {
 
-	private final PostService postService;
+	private final JsonPlaceholderService postService;
 
-	public PostController (PostService postService) {
+	public PostController (JsonPlaceholderService postService) {
 		this.postService = postService;
 	}
 
